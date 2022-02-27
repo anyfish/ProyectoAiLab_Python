@@ -1,5 +1,6 @@
 import csv
 import random
+from tkinter import messagebox as mss
 from venv.GAME.Aimons import *
 
 listadeUsuarios = []
@@ -85,7 +86,7 @@ def validarUsuario():
             else:
                 menu()
     else:
-        print(f"\nEl usuario {usuario[0]} no existe\n")
+        mss.showinfo(message="El usuario no existe\n")
         inicio()
 
 def nuevoUsuario():
